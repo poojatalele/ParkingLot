@@ -2,20 +2,11 @@ package com.sst.models;
 
 import java.util.List;
 
-public class ParkingLot {
-    private Long id;
+public class ParkingLot extends BaseModel{
     private List<ParkingFloor> parkingFloor;
     private List<VehicleType> vehicleTypes;
     private List<Gate> gates;
-    private Status status;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private ParkingLotStatus parkingLotStatus;
 
     public List<ParkingFloor> getParkingFloor() {
         return parkingFloor;
@@ -41,11 +32,11 @@ public class ParkingLot {
         this.gates = gates;
     }
 
-    public Status getStatus() {
-        return status;
+    public ParkingLotStatus getParkingLotStatus() {
+        return parkingLotStatus;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setParkingLotStatus(ParkingLotStatus parkingLotStatus) {
+        this.parkingLotStatus = parkingLotStatus;
     }
 }

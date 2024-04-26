@@ -1,34 +1,25 @@
 package com.sst.models;
 
-public class Gate {
-    private Long id;
-    private int number;
-    private Status status;
+public class Gate extends BaseModel{
+    private int gateNumber;
+    private GateStatus gateStatus;
     private Operator operator;
     private GateType gateType;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public int getNumber() {
-        return number;
+        return gateNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setNumber(int gateNumber) {
+        this.gateNumber = gateNumber;
     }
 
-    public Status getGateStatus() {
-        return status;
+    public GateStatus getGateStatus() {
+        return gateStatus;
     }
 
-    public void setGateStatus(Status status) {
-        this.status = status;
+    public void setGateStatus(GateStatus gateStatus) {
+        this.gateStatus = gateStatus;
     }
 
     public Operator getOperator() {

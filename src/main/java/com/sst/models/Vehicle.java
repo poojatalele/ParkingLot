@@ -1,24 +1,15 @@
 package com.sst.models;
 
 public class Vehicle {
-    private Long id;
-    private int number;
+    private String number;
     private VehicleType vehicleType;
     private String ownerName;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public int getNumber() {
+    public String getNumber() {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(String number) {
         this.number = number;
     }
 

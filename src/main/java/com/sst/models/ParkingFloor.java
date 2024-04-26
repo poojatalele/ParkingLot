@@ -3,25 +3,16 @@ package com.sst.models;
 import java.util.List;
 
 public class ParkingFloor {
-    private Long id;
-    private int number;
+    private int floorNumber;
     private List<ParkingSpot> parkingSpots;
-    private Status status;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    private ParkingFloorStatus parkingFloorStatus;
 
     public int getNumber() {
-        return number;
+        return floorNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setNumber(int floorNumber) {
+        this.floorNumber = floorNumber;
     }
 
     public List<ParkingSpot> getParkingSpots() {
@@ -32,11 +23,11 @@ public class ParkingFloor {
         this.parkingSpots = parkingSpots;
     }
 
-    public Status getStatus() {
-        return status;
+    public ParkingFloorStatus getStatus() {
+        return parkingFloorStatus;
     }
 
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setStatus(ParkingFloorStatus parkingFloorStatus) {
+        this.parkingFloorStatus = parkingFloorStatus;
     }
 }

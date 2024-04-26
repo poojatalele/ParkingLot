@@ -2,43 +2,34 @@ package com.sst.models;
 
 import java.util.List;
 
-public class ParkingSpot {
-    private Long id;
-    private int number;
-    private List<VehicleType> vehicleTypes;
-    private Status status;
+public class ParkingSpot extends BaseModel{
+    private List<VehicleType> supportedVehicleTypes;
+    private ParkingSpotStatus parkingSpotStatus;
+    private int spotNumber;
     private ParkingFloor parkingFloor;
 
-    public Long getId() {
-        return id;
+    public List<VehicleType> getSupportedVehicleTypes() {
+        return supportedVehicleTypes;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setSupportedVehicleTypes(List<VehicleType> supportedVehicleTypes) {
+        this.supportedVehicleTypes = supportedVehicleTypes;
     }
 
-    public int getNumber() {
-        return number;
+    public ParkingSpotStatus getParkingSpotStatus() {
+        return parkingSpotStatus;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setParkingSpotStatus(ParkingSpotStatus parkingSpotStatus) {
+        this.parkingSpotStatus = parkingSpotStatus;
     }
 
-    public List<VehicleType> getVehicleTypes() {
-        return vehicleTypes;
+    public int getSpotNumber() {
+        return spotNumber;
     }
 
-    public void setVehicleTypes(List<VehicleType> vehicleTypes) {
-        this.vehicleTypes = vehicleTypes;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
+    public void setSpotNumber(int spotNumber) {
+        this.spotNumber = spotNumber;
     }
 
     public ParkingFloor getParkingFloor() {

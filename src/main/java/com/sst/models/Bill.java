@@ -3,7 +3,7 @@ package com.sst.models;
 import java.util.Date;
 import java.util.List;
 
-public class Bill {
+public class Bill extends BaseModel{
     private Date exitTime;
     private int amount;
     private Ticket ticket;
